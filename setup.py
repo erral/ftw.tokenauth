@@ -2,7 +2,7 @@ from setuptools import find_packages
 from setuptools import setup
 import os
 
-version = '2.0+cs.4'
+version = '2.0+cs.5.dev0'
 
 tests_require = [
     'unittest2',
