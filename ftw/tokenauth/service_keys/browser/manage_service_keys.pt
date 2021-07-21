@@ -45,11 +45,12 @@
                         <td tal:content="key_info/client_id" />
                         <td tal:content="key_info/ip_range" />
                         <td>
-                          <span tal:condition="key_info/issued" tal:content="python:toLocalizedTime(key_info['issued'], long_format=1)"/>
+                          <span tal:content="python:toLocalizedTime(key_info['issued'], long_format=1)"/>
                         </td>
                         <td>
                             <a tal:attributes="href string:${context/absolute_url}/@@manage-service-keys-logs?key_id=${key_info/key_id}"
-                               tal:content="python:toLocalizedTime(key_info['last_used'], long_format=1)" />
+                                tal:condition="key_info/last_used"
+                                tal:content="python:toLocalizedTime(key_info['last_used'], long_format=1)" />
                         </td>
                         <td>
                             <a tal:attributes="href string:${context/absolute_url}/@@manage-service-keys-edit?key_id=${key_info/key_id}"
