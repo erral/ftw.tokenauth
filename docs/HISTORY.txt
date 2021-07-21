@@ -5,7 +5,20 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- add condition [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- error control [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- tests [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- docs [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- DELETE REST API endpoint to delete a service key [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- POST REST API endpoint to create a new service key [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- GET REST API endpoint to list service keys [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 1.1.0 (2018-07-12)
