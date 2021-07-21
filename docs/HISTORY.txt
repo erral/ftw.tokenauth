@@ -5,7 +5,10 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- error control [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- plone 5.2 and python3 testing config [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 1.1.0 (2018-07-12)
