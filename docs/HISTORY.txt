@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.1.1 (unreleased)
-------------------
+2.0+cs.3 (2021-07-21)
+---------------------
 
 - add condition [Mikel Larreategi <mlarreategi@codesyntax.com>]
 
