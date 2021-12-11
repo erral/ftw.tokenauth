@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0+cs.5 (unreleased)
+2.0+cs.5 (2021-12-11)
 ---------------------
 
 - Merge branch 'rest-api' into full-merged [Mikel Larreategi <mlarreategi@codesyntax.com>]
