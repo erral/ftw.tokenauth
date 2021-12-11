@@ -5,7 +5,24 @@ Changelog
 2.0+cs.5 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Merge branch 'rest-api' into full-merged [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- return the service_key in JSON format and add the title and ip_range information to it [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- error control [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- Preparing release 2.0+cs.4 [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- Update changelog [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 2.0+cs.4 (2021-07-21)
