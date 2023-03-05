@@ -5,7 +5,14 @@ Changelog
 2.0+cs.6 (unreleased)
 ---------------------
 
+- Update changelog [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 - black and dependency fixes [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 -  [Mikel Larreategi <mlarreategi@codesyntax.com>]
 
