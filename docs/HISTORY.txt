@@ -5,7 +5,12 @@ Changelog
 2.0+cs.6 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- black and dependency fixes [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 2.0+cs.5 (2021-12-11)
