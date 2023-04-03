@@ -27,8 +27,11 @@ class JWTBearerGrantProcessor(object):
 
     def verify(self, assertion, service_key):
         verified_claimset = jwt.decode(
-            assertion, service_key['public_key'], algorithms='RS256',
-            audience=self.token_uri)
+            assertion,
+            service_key["public_key"],
+            algorithms="RS256",
+            audience=self.token_uri,
+        )
 
         if verified_claimset['iss'] != service_key['client_id']:
             raise IssuerMismatch(
