@@ -33,11 +33,12 @@ class JWTBearerGrantProcessor(object):
             audience=self.token_uri,
         )
 
-        if verified_claimset['iss'] != service_key['client_id']:
+        if verified_claimset["iss"] != service_key["client_id"]:
             raise IssuerMismatch(
-                "JWT issuer doesn't match client_id of service key")
+                "JWT issuer doesn't match client_id of service key"
+            )
 
-        exp = verified_claimset.get('exp')
+        exp = verified_claimset.get("exp")
         if not exp:
             raise MissingExpClaim("Missing 'exp' claim")
 
@@ -49,15 +50,16 @@ class JWTBearerGrantProcessor(object):
         if (exp - datetime.now()) > timedelta(days=1):
             # Unreasonably far in the future
             raise FarFutureExp(
-                "JWT expiration is more than a day in the future")
+                "JWT expiration is more than a day in the future"
+            )
 
         # Should have been verified by PyJWT above
-        assert verified_claimset['aud'] == self.token_uri
+        assert verified_claimset["aud"] == self.token_uri
 
-        if 'nbf' in verified_claimset:
+        if "nbf" in verified_claimset:
             raise NBFClaimNotSupported("The 'nbf' claim is not suppported")
 
-        iat = verified_claimset.get('iat')
+        iat = verified_claimset.get("iat")
         if not iat:
             raise MissingIatClaim("Missing 'iat' claim")
 
@@ -65,13 +67,14 @@ class JWTBearerGrantProcessor(object):
 
         if (datetime.now() - iat) > timedelta(hours=1):
             raise IatTooFarInPast(
-                "JWT was issued more than an hour in the past")
+                "JWT was issued more than an hour in the past"
+            )
 
         allowed_clock_skew = timedelta(minutes=1)
         if (iat - datetime.now()) > allowed_clock_skew:
             raise IatInFuture("JWT issue time is in the future")
 
-        if 'scope' in verified_claimset:
+        if "scope" in verified_claimset:
             raise ScopesNotSupported("Scopes are not supported yet")
 
         return verified_claimset
