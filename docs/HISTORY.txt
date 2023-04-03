@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0+cs.8 (unreleased)
+2.0+cs.8 (2023-04-03)
 ---------------------
 
 - newer pyjwt requires to be explicit about algorithms [Mikel Larreategi <mlarreategi@codesyntax.com>]
