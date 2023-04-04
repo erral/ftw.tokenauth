@@ -5,7 +5,12 @@ Changelog
 2.0+cs.9 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- do not use an emptystring as a default for ip_range [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+-  [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- [ci skip] [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 2.0+cs.8 (2023-04-03)

@@ -20,13 +20,17 @@ class CreateToken(Service):
             return {}
 
         if "IDisableCSRFProtection" in dir(plone.protect.interfaces):
-            alsoProvides(self.request, plone.protect.interfaces.IDisableCSRFProtection)
+            alsoProvides(
+                self.request, plone.protect.interfaces.IDisableCSRFProtection
+            )
 
         data = json_body(self.request)
 
         if "title" not in data:
             self.request.response.setStatus(400)
-            message = _("You need to provide at least a title for the service key")
+            message = _(
+                "You need to provide at least a title for the service key"
+            )
             return {"error": {"type": "error", "message": message}}
 
         user_id = api.user.get_current().id
@@ -39,11 +43,11 @@ class CreateToken(Service):
         self._generated_private_key = private_key
         self._generated_service_key = service_key
 
-        service_key_id = (
-            f"{self.context.absolute_url()}/@service-keys/{service_key['key_id']}"
-        )
+        service_key_id = f"{self.context.absolute_url()}/@service-keys/{service_key['key_id']}"
 
-        service_key_json = json.loads(create_json_keyfile(private_key, service_key))
+        service_key_json = json.loads(
+            create_json_keyfile(private_key, service_key)
+        )
         service_key_json.update(
             {"title": data.get("title"), "ip_range": data.get("ip_range")}
         )
