@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-2.0+cs.9 (unreleased)
+2.0+cs.9 (2023-04-04)
 ---------------------
 
 - do not use an emptystring as a default for ip_range [Mikel Larreategi <mlarreategi@codesyntax.com>]
